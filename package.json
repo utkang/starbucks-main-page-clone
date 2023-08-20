@@ -1,0 +1,14 @@
+{
+  "name": "starbucks-clone",
+  "version": "1.0.0",
+  "description": "a clone of main page starbucks.com",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "author": "Utkan",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^9.0.0"
+  }
+}

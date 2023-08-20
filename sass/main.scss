@@ -1,0 +1,111 @@
+@import 'utils';
+@import 'base';
+@import 'container';
+@import 'navbar';
+@import 'section';
+@import 'footer';
+
+@media screen and (max-width:1640px) {
+
+  .navbar.container {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width:1440px) {
+
+  .container {
+    width: 100%;
+  }
+
+  .navbar {
+    .container {
+      & > .nav-main {
+        margin-right: 40px;
+      }
+    }
+  }
+
+  footer {
+    margin-left: 40px;
+  }
+}
+
+@media screen and (max-width:1115px) {
+  
+  .main{
+    .section{
+      span{
+        max-width: none;
+      }
+      .article{
+        .info{
+          ul{
+            li{
+              h1{
+                font-size: 28px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  
+
+  footer {
+    .main-footer {
+      & > ul {
+        flex-wrap: wrap;
+      }
+    }
+  }
+}
+
+@media screen and (max-width:768px) {
+
+  .main {
+    .section{
+      .article {
+        & > .info {
+          width: 100% !important;
+          margin: 2rem;
+        }
+        & > .img {
+        max-width: 100% !important;
+        }
+      }
+      .article1 {
+        flex-wrap: wrap-reverse;
+      }
+      .article2 {
+        flex-wrap: wrap;
+      }
+      .article3 {
+        flex-wrap: wrap-reverse;
+      }
+      .article4 {
+        flex-wrap: wrap;
+      }
+    }
+    .rewards {
+      p {
+        a {
+          display: inline-block;
+        }
+      }
+    }
+  }
+
+  footer {
+    .sub-footer {
+      .privacy {
+        flex-direction: column;
+        gap: 0;
+        .vertical-bar{
+          visibility: hidden;
+        }
+      }
+    }
+  }
+}
